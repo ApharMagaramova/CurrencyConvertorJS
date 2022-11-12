@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Currency Convertor</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-logo-img">
+            <img class="logo-img" src="./assets/Images/header_img.png" alt="bank">
+        </div>
+
+        <div class="header-menu-div">
+            <ul class="header-list">
+                <li>БАНК</li>
+                <li>БИЗНЕС</li>
+                <li>ИНВЕСТИЦИИ</li>
+                <li>СТРАХОВАНИЕ</li>
+                <li>МОБАЙЛ</li>
+                <li>ПУТЕШЕСТВИЯ</li>
+                <li>РАЗВЛЕЧЕНИЯ</li>
+            </ul>
+        </div>
+
+        <button class="header-button">ВОЙТИ</button>
+    </header>
+
+    <main>
+
+        <h1>Конвертер валют онлайн</h1>
+
+        <div class="convertor-sections">
+
+            <section class="input-section">
+
+                <h2>У меня есть</h2>
+
+                <div class="currency-menu">
+                    <div id="rub">
+                        <p>RUB</p>
+                    </div>
+                    <div id="usd">
+                        <p>USD</p>
+                    </div>
+                    <div id="eur">
+                        <p>EUR</p>
+                    </div>
+                    <div id="gbp">
+                        <p>GBP</p>
+                    </div>
+                </div>
+
+                <div class="currency-value-container">
+                    <input class="value" type="text">
+
+                    <label class="currency" for="currency-value">Value</label>
+                </div>
+
+            </section>
+
+            <section class="output-section">
+
+                <h2>Хочу приобрести</h2>
+
+
+                <div class="currency-menu">
+                    <div id="rub">
+                        <p>RUB</p>
+                    </div>
+                    <div id="usd">
+                        <p>USD</p>
+                    </div>
+                    <div id="eur">
+                        <p>EUR</p>
+                    </div>
+                    <div id="gbp">
+                        <p>GBP</p>
+                    </div>
+                </div>
+
+                <div class="currency-value-container">
+                    <label class="value" for="result-value">result</label>
+
+                    <label class="currency" for="currency-value">value</label>
+                </div>
+
+            </section>
+        </div>
+
+    </main>
+
+
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
