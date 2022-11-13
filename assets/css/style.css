@@ -92,7 +92,8 @@ h2 {
     color: #9F9F9F;
 }
 
-.currency-menu {
+.currency-menu-left,
+.currency-menu-right {
     box-sizing: border-box;
 
     width: 259px;
@@ -106,7 +107,9 @@ h2 {
     margin-bottom: 20px;
 }
 
-.currency-menu div {
+.currency-menu-right button,
+.currency-menu-left button {
+    cursor: pointer;
     width: 25%;
     box-sizing: border-box;
     border: 1px solid #E5E5E5;
@@ -116,21 +119,18 @@ h2 {
     padding-left: 5%;
     padding-right: 5%;
 
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-
-.currency-menu div p {
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
 
     color: #C6C6C6;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
-.currency-value-container {
+.currency-left-calculate,
+.currency-right-calculate {
     box-sizing: border-box;
 
     width: 259px;
@@ -144,7 +144,8 @@ h2 {
     justify-content: space-between;
 }
 
-.currency-value-container .value {
+.currency-left-calculate .left-value,
+.currency-right-calculate .right-value {
     height: 38px;
     padding-left: 15px;
     padding-top: 10px;
@@ -158,15 +159,16 @@ h2 {
     color: #000000;
 }
 
-.currency-value-container input {
+.currency-left-calculate .left-value {
     border: 0px;
 }
 
-.currency-value-container input:focus {
+.currency-left-calculate input:focus {
     outline: none;
 }
 
-.currency-value-container .currency {
+.currency-left-calculate .currency-left, 
+.currency-right-calculate .currency-right {
     height: 28px;
     padding-left: 15px;
 
@@ -178,4 +180,16 @@ h2 {
     align-items: center;
 
     color: #C6C6C6;
+}
+
+.deactive {
+    background-color: #FFFFFF;
+    border-color: #E5E5E5;
+    color: #C6C6C6;
+}
+
+.active {
+    background-color: #833AE0;
+    border-color: #833AE0;
+    color: #FFFFFF;
 }

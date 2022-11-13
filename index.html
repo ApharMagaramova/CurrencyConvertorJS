@@ -45,25 +45,17 @@
 
                 <h2>У меня есть</h2>
 
-                <div class="currency-menu">
-                    <div id="rub">
-                        <p>RUB</p>
-                    </div>
-                    <div id="usd">
-                        <p>USD</p>
-                    </div>
-                    <div id="eur">
-                        <p>EUR</p>
-                    </div>
-                    <div id="gbp">
-                        <p>GBP</p>
-                    </div>
+                <div class="currency-menu-left">
+                    <button class="button-left active">RUB</button>
+                    <button class="button-left deactive">USD</button>
+                    <button class="button-left deactive">EUR</button>
+                    <button class="button-left deactive">GBP</button>
                 </div>
 
-                <div class="currency-value-container">
-                    <input class="value" type="text">
+                <div class="currency-left-calculate">
+                    <input class="left-value" type="text">
 
-                    <label class="currency" for="currency-value">Value</label>
+                    <label class="currency-left" for="currency-value">1 RUB = 0.016523 USD</label>
                 </div>
 
             </section>
@@ -72,26 +64,17 @@
 
                 <h2>Хочу приобрести</h2>
 
-
-                <div class="currency-menu">
-                    <div id="rub">
-                        <p>RUB</p>
-                    </div>
-                    <div id="usd">
-                        <p>USD</p>
-                    </div>
-                    <div id="eur">
-                        <p>EUR</p>
-                    </div>
-                    <div id="gbp">
-                        <p>GBP</p>
-                    </div>
+                <div class="currency-menu-right">
+                    <button class="button-right deactive">RUB</button>
+                    <button class="button-right active">USD</button>
+                    <button class="button-right deactive">EUR</button>
+                    <button class="button-right deactive">GBP</button>
                 </div>
 
-                <div class="currency-value-container">
-                    <label class="value" for="result-value">result</label>
+                <div class="currency-right-calculate">
+                    <label class="right-value" id="result" for="result-value"></label>
 
-                    <label class="currency" for="currency-value">value</label>
+                    <label class="currency-right" for="currency-value">1 USD = 60.521697 RUB</label>
                 </div>
 
             </section>
